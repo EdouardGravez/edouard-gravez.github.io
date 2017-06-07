@@ -1,0 +1,25 @@
+ /* Style css pour le body */
+ 
+ .body,
+ html {
+     height: 100%;
+ }
+ 
+ .parallax_1 {
+     /* Parallax 1 */
+     background-image: url('../img/parallax_narbonne.jpg');
+     /* Hauteur */
+     height: 100%;
+     /* Effect Scroll */
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ /* Effet Parallax 1 pour mobiles et tablettes */
+ 
+ @media only screen and (max-device-width: 1024px) {
+     .parallax_1 {
+         background-attachment: scroll;
+     }
+ }
