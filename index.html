@@ -31,11 +31,48 @@
         </ul>
     </div>
 
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">SCROLL 1</span>
+        </div>
+    </div>
+
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center;">Premier Parallax</h3>
+        <p>Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+    </div>
+
 
 
 
     <!-- Scripts -->
 
+    <script>
+        // Changement style de la navbar et le scroll
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-black";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-black", "");
+            }
+        }
+
+        // Menu Petits écrans smartphones et Tablettes Responsive ...
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+    </script>
 </body>
 
 </html>
