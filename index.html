@@ -12,6 +12,17 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Les favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/fav/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/img/fav/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="assets/img/fav/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="assets/img/fav/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="assets/img/fav/manifest.json">
+    <link rel="mask-icon" href="assets/img/fav/safari-pinned-tab.svg" color="#000">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="assets/img/fav/mstile-144x144.png">
+    <meta name="theme-color" content="#000">
 </head>
 
 <body>
@@ -26,7 +37,7 @@
             </li>
             <li class="w3-hide-small w3-hover-dark-grey w3-padding-12"><a class="w3-hover-dark-grey" href="#top"><i class="fa fa-home"></i> ACCUEIL</a></li>
             <li class="w3-hide-small w3-hover-deep-orange w3-padding-12"><a class="w3-hover-deep-orange" href="#about"><i class="fa fa-user"></i> A PROPOS</a></li>
-            <li class="w3-hide-small w3-hover-lime w3-padding-12"><a class="w3-hover-lime" href="#services"><i class="fa fa-th"></i> SERVICES</a></li>
+            <li class="w3-hide-small w3-hover-lime w3-padding-12"><a class="w3-hover-lime" href="#competences"><i class="fa fa-th"></i> SAVOIR-FAIRE</a></li>
             <li class="w3-hide-small w3-hover-deep-purple w3-padding-12"><a class="w3-hover-deep-purple" href="#contact"><i class="fa fa-envelope"></i> CONTACT</a></li>
         </ul>
 
@@ -35,21 +46,27 @@
             <ul class="w3-navbar w3-left-align w3-black">
                 <li class="w3-hover-dark-grey"><a class="w3-hover-dark-grey" href="#top" onclick="toggleFunction()"> ACCUEIL</a></li>
                 <li class="w3-hover-deep-orange"><a class="w3-hover-deep-orange" href="#bout" onclick="toggleFunction()"> A PROPOS</a></li>
-                <li class="w3-hover-lime"><a class="w3-hover-lime" href="#services" onclick="toggleFunction()"> SERVICES</a></li>
+                <li class="w3-hover-lime"><a class="w3-hover-lime" href="#savoir-faire" onclick="toggleFunction()"> SAVOIR-FAIRE</a></li>
                 <li class="w3-hover-deep-purple"><a class="w3-hover-deep-purple" href="#contact" onclick="toggleFunction()"> CONTACT</a></li>
             </ul>
         </div>
     </div>
 
-    <div class="bgimg-1">
-        <div class="caption">
-            <span class="border">SCROLL 1</span>
-        </div>
-    </div>
+    <!-- Parallax 1 avec narbonne_parallax.jpg -->
+    <div class="bgimg-1 w3-display-container" id="home">
+        <div class="w3-display-middle">
+            <span class="w3-dark-grey w3-text-light-grey w3-wide">BIENVENUE SUR MON SITE CV</span>
+            <br>
+            <span class="w3-dark-grey w3-text-light-grey w3-wide">http://edouar-gravez.github.io</span>
 
-    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-        <h3 style="text-align:center;">Premier Parallax</h3>
-        <p>Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+        </div>
+
+    </div>
+    <!-- Container (Section A PROPOS) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center w3-panel w3-card-8 w3-deep-orange">A PROPOS</h3>
+        <p class="w3-align-justify"><em>Webmaster Autodidacte depuis 2001 - Développeur d'application Web et Web mobile depuis 2016, (Formation <a class="w3-hover-deep-orange" href="http://www.simplon.co" target="_blank">Simplon.co)</a>, certifié R.N.C.P niveau IV le 19 Septembre 2016 devant un jury à l'IN'ESS Le Grand Narbonne.</em></p>
+        <p>NOËL 2000 ... Internet débarque dans les foyers français avec Windows 98; Les jouets et autres cadeaux sont commandés et j'invéstis dans un PC familial, imprimante et bien sûr le modem 56K qui va avec. Je navigue, la curiosité me pousse à savoir ce qui se passe derrière l'écran, ça devient une révélation, presqu'une obsession. De tutoriels en tutoriels et achats de livres spécialisés; Je pense sérieusement à une reconversion professionnelle. Première formation validée "Webmaster/Webdesigner" qui se déroule à l'I.T.I Clermont-Ferrand (Septembre 2001); Je me familiarisais déjà avec le monde des CMS (Système de Gestion de Contenus en français), tel que XOOPS, MAMBO (ancêtre de JOOMLA), SPIP ainsi qu'osCommerce (E Commerce).</p>
     </div>
 
 
@@ -108,7 +125,7 @@
 
         // Menu Petits écrans smartphones et Tablettes Responsive ...
         function toggleFunction() {
-            var x = document.getElementById("navDemo");
+            var x = document.getElementById("navMobile");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
             } else {
