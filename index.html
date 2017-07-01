@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <!-- Les favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="assets/img/fav/favicon-32x32.png" sizes="32x32">
@@ -28,15 +29,15 @@
 <body>
 
     <!-- Navigation en haut (Top Nav) -->
-    <div class="w3-top">
+    <div class="w3-top w3-black">
         <ul class="w3-navbar w3-black w3-large" id="myNavbar">
             <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
                 <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                     <i class="fa fa-bars"></i>
                 </a>
             </li>
-            <li class="w3-hide-small w3-hover-dark-grey w3-padding-12"><a class="w3-hover-dark-grey" href="#top"><i class="fa fa-home"></i> ACCUEIL</a></li>
-            <li class="w3-hide-small w3-hover-deep-orange w3-padding-12"><a class="w3-hover-deep-orange" href="#about"><i class="fa fa-user"></i> A PROPOS</a></li>
+            <li class="w3-hide-small w3-hover-dark-grey w3-padding-12"><a class="js-scrollTo w3-hover-dark-grey" href="#home"><i class="fa fa-home"></i> ACCUEIL</a></li>
+            <li class="w3-hide-small w3-hover-deep-orange w3-padding-12"><a class="js-scrollTo w3-hover-deep-orange" href="#about"><i class="fa fa-user"></i> A PROPOS</a></li>
             <li class="w3-hide-small w3-hover-lime w3-padding-12"><a class="w3-hover-lime" href="#competences"><i class="fa fa-th"></i> SAVOIR-FAIRE</a></li>
             <li class="w3-hide-small w3-hover-deep-purple w3-padding-12"><a class="w3-hover-deep-purple" href="#contact"><i class="fa fa-envelope"></i> CONTACT</a></li>
         </ul>
@@ -44,8 +45,8 @@
         <!-- Navigation pour mobiles et tablettes, je travaille dessus -->
         <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
             <ul class="w3-navbar w3-left-align w3-black">
-                <li class="w3-hover-dark-grey"><a class="w3-hover-dark-grey" href="#top" onclick="toggleFunction()"> ACCUEIL</a></li>
-                <li class="w3-hover-deep-orange"><a class="w3-hover-deep-orange" href="#bout" onclick="toggleFunction()"> A PROPOS</a></li>
+                <li class="w3-hover-dark-grey"><a class="w3-hover-dark-grey" href="#home" onclick="toggleFunction()"> ACCUEIL</a></li>
+                <li class="w3-hover-deep-orange"><a class="w3-hover-deep-orange" href="#about" onclick="toggleFunction()"> A PROPOS</a></li>
                 <li class="w3-hover-lime"><a class="w3-hover-lime" href="#savoir-faire" onclick="toggleFunction()"> SAVOIR-FAIRE</a></li>
                 <li class="w3-hover-deep-purple"><a class="w3-hover-deep-purple" href="#contact" onclick="toggleFunction()"> CONTACT</a></li>
             </ul>
@@ -138,6 +139,20 @@
                 x.className = x.className.replace(" w3-show", "");
             }
         }
+
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate({
+                    scrollTop: $(page).offset().top
+                }, speed); // Go
+                return false;
+            });
+        });
 
     </script>
 </body>
