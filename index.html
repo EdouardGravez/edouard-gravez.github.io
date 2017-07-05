@@ -39,16 +39,16 @@
             <li class="w3-hide-small w3-hover-dark-grey w3-padding-12"><a class="js-scrollTo w3-hover-dark-grey" href="#home"><i class="fa fa-home"></i> ACCUEIL</a></li>
             <li class="w3-hide-small w3-hover-deep-orange w3-padding-12"><a class="js-scrollTo w3-hover-deep-orange" href="#about"><i class="fa fa-user"></i> A PROPOS</a></li>
             <li class="w3-hide-small w3-hover-lime w3-padding-12"><a class="js-scrollTo w3-hover-lime" href="#competences"><i class="fa fa-th"></i> SAVOIR-FAIRE</a></li>
-            <li class="w3-hide-small w3-hover-deep-purple w3-padding-12"><a class="w3-hover-deep-purple" href="#contact"><i class="fa fa-envelope"></i> CONTACT</a></li>
+            <li class="w3-hide-small w3-hover-deep-purple w3-padding-12"><a class="js-scrollTo w3-hover-deep-purple" href="#contact"><i class="fa fa-envelope"></i> CONTACT</a></li>
         </ul>
 
         <!-- Navigation pour mobiles et tablettes, je travaille dessus -->
-        <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+        <div id="navMobile" class="w3-hide w3-hide-large w3-hide-medium">
             <ul class="w3-navbar w3-left-align w3-black">
-                <li class="w3-hover-dark-grey"><a class="w3-hover-dark-grey" href="#home" onclick="toggleFunction()"> ACCUEIL</a></li>
-                <li class="w3-hover-deep-orange"><a class="w3-hover-deep-orange" href="#about" onclick="toggleFunction()"> A PROPOS</a></li>
-                <li class="w3-hover-lime"><a class="w3-hover-lime" href="#savoir-faire" onclick="toggleFunction()"> SAVOIR-FAIRE</a></li>
-                <li class="w3-hover-deep-purple"><a class="w3-hover-deep-purple" href="#contact" onclick="toggleFunction()"> CONTACT</a></li>
+                <li class="w3-hover-dark-grey"><a class="js-scrollTo w3-hover-dark-grey" href="#home" onclick="toggleFunction()"> ACCUEIL</a></li>
+                <li class="w3-hover-deep-orange"><a class="js-scrollTo w3-hover-deep-orange" href="#about" onclick="toggleFunction()"> A PROPOS</a></li>
+                <li class="w3-hover-lime"><a class="js-scrollTo w3-hover-lime" href="#savoir-faire" onclick="toggleFunction()"> SAVOIR-FAIRE</a></li>
+                <li class="w3-hover-deep-purple"><a class="js-scrollTo w3-hover-deep-purple" href="#contact" onclick="toggleFunction()"> CONTACT</a></li>
             </ul>
         </div>
     </div>
@@ -56,11 +56,11 @@
     <!-- Parallax 1 avec narbonne_parallax.jpg -->
     <div class="bgimg-1 w3-display-container" id="home">
         <h1>
-            <div class="w3-display-middle w3-center">
+            <div class="w3-display-topmiddle w3-center">
                 <span class="w3-dark-grey">Edouard Gravez</span>
-                <br>
+            </div>
+            <div class="w3-display-middle w3-center">
                 <span class="w3-deep-orange">http://edouard-gravez.github.io</span>
-
             </div>
             <div class="w3-display-bottommiddle w3-center">
                 <span class="w3-deep-purple">Webmaster Intégrateur</span>
@@ -148,9 +148,11 @@
     </div>
 
     <div class="bgimg-3 w3-display-container" id="contact">
-        <div class="caption">
-            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Contenu en cours ....</span>
-        </div>
+        <h2>
+            <div class="w3-display-middle w3-center">
+                <span class="w3-deep-purple">Me contacter</span>
+            </div>
+        </h2>
     </div>
 
     <div style="position:relative;">
