@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Les favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="assets/img/fav/favicon-32x32.png" sizes="32x32">
@@ -29,26 +29,47 @@
 <body>
 
     <!-- Navigation en haut (Top Nav) -->
-    <div class="w3-top w3-black">
+    <div class="w3-top">
         <ul class="w3-navbar w3-black w3-large" id="myNavbar">
             <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
                 <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars">
+                    </i>
                 </a>
             </li>
-            <li class="w3-hide-small w3-hover-dark-grey w3-padding-12"><a class="js-scrollTo w3-hover-dark-grey" href="#home"><i class="fa fa-home"></i> ACCUEIL</a></li>
-            <li class="w3-hide-small w3-hover-deep-orange w3-padding-12"><a class="js-scrollTo w3-hover-deep-orange" href="#about"><i class="fa fa-user"></i> A PROPOS</a></li>
-            <li class="w3-hide-small w3-hover-lime w3-padding-12"><a class="js-scrollTo w3-hover-lime" href="#competences"><i class="fa fa-th"></i> SAVOIR-FAIRE</a></li>
-            <li class="w3-hide-small w3-hover-deep-purple w3-padding-12"><a class="js-scrollTo w3-hover-deep-purple" href="#contact"><i class="fa fa-envelope"></i> CONTACT</a></li>
+            <li class="w3-hide-small w3-hover-dark-grey w3-padding-12">
+                <a class="js-scrollTo w3-hover-dark-grey" href="#top" title="Accueil">
+                    <i class="fa fa-home"></i> ACCUEIL</a>
+            </li>
+            <li class="w3-hide-small w3-hover-deep-orange w3-padding-12">
+                <a class="js-scrollTo w3-hover-deep-orange" href="#about" title="A propos">
+                    <i class="fa fa-user"></i> A PROPOS</a>
+            </li>
+            <li class="w3-hide-small w3-hover-lime w3-padding-12">
+                <a class="js-scrollTo w3-hover-lime" href="#competences" title="Savoir-faire et compétences">
+                    <i class="fa fa-th"></i> SAVOIR-FAIRE
+                </a>
+            </li>
+            <li class="w3-hide-small w3-hover-deep-purple w3-padding-12">
+                <a class="js-scrollTo w3-hover-deep-purple" href="#contact" title="Me contacter">
+                    <i class="fa fa-envelope"></i> CONTACT</a>
+            </li>
         </ul>
 
         <!-- Navigation pour mobiles et tablettes -->
         <div id="navMobile" class="w3-hide w3-hide-large w3-hide-medium">
             <ul class="w3-navbar w3-left-align w3-black">
-                <li class="w3-hover-dark-grey"><a class="js-scrollTo w3-hover-dark-grey" href="#home" onclick="toggleFunction()"> ACCUEIL</a></li>
-                <li class="w3-hover-deep-orange"><a class="js-scrollTo w3-hover-deep-orange" href="#about" onclick="toggleFunction()"> A PROPOS</a></li>
-                <li class="w3-hover-lime"><a class="js-scrollTo w3-hover-lime" href="#competences" onclick="toggleFunction()"> SAVOIR-FAIRE</a></li>
-                <li class="w3-hover-deep-purple"><a class="js-scrollTo w3-hover-deep-purple" href="#contact" onclick="toggleFunction()"> CONTACT</a></li>
+                <li class="w3-hover-dark-grey">
+                    <a class="js-scrollTo js-scrollTo js-scrollTo js-scrollTo w3-hover-dark-grey" href="#top" onclick="toggleFunction()" title="Accueil"> ACCUEIL</a></li>
+                <li class="w3-hover-deep-orange">
+                    <a class="js-scrollTo js-scrollTo js-scrollTo w3-hover-deep-orange" href="#about" onclick="toggleFunction()" title="A propos"> A PROPOS</a>
+                </li>
+                <li class="w3-hover-lime">
+                    <a class="js-scrollTo js-scrollTo w3-hover-lime" href="#competences" onclick="toggleFunction()" title="Savoir-faire et compétences"> SAVOIR-FAIRE</a>
+                </li>
+                <li class="w3-hover-deep-purple">
+                    <a class="js-scrollTo w3-hover-deep-purple" href="#contact" onclick="toggleFunction()" title="Me contacter"> CONTACT</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -60,13 +81,17 @@
                 <br>
                 <span class="w3-dark-grey">Edouard Gravez</span>
             </div>
+        </h1>
+        <h2>
             <div class="w3-display-middle w3-center">
                 <span class="w3-deep-purple">Webmaster Intégrateur</span>
             </div>
             <div class="w3-display-bottommiddle w3-center">
                 <span class="w3-lime">à Narbonne - Occitanie</span>
+                <br>
             </div>
-        </h1>
+        </h2>
+
     </div>
 
     <!-- Container (Section A PROPOS) -->
@@ -75,7 +100,7 @@
         <p class="w3-align-justify"><em>Webmaster Autodidacte depuis 2001 - Développeur d'application Web et Web mobile depuis 2016, (Formation <a class="w3-black w3-hover-deep-orange" href="http://www.simplon.co" target="_blank">Simplon.co</a>), certifié R.N.C.P niveau IV le 19 Septembre 2016 devant un jury deprofessionnels du Web à l'IN'ESS Le Grand Narbonne.</em></p>
         <div class="w3-panel w3-border w3-border-deep-orange w3-light-black w3-round-large">
             <p>Pour obtenir une certification il faut bien sûr fournir un projet Web ou une Application Web, seul ou en équipe, en respectant un cahier des charges, une gestion de projet, etc... Initialement prévu en équipe, un projet commun avorte à cinq jours de la date limite du dépot (28 Aout 2016) des codes sur Github.
-                <br> Je me retrouve donc seul sans aucune idée et paniqué; Un encadrant de SIMPLON me contacte pour m'encourager. Etant passionné de pêche, je décide de faire un blog sur ce sujet, à savoir que les CMS sont proscrits pour l'execice; Je contacte l'un de mes formateurs afin qu'il m'ouvre une base de données MySQL ainsi qu'un compte FTP, protège mon espace dédié avec un .htaccess et . htpasswd ... <b><i>BlogFisherMan</i></b> voit le jour ... (il n'y a pas de contenu sauf pour la Dorade Royale mais les fonctionnalités spécifiées sur le cahier des charges ont été respectées).
+                <br>Je me retrouve donc seul sans aucune idée; Un encadrant de SIMPLON me contacte pour m'encourager. Etant passionné de pêche, je décide de faire un blog sur ce sujet, à savoir que les CMS sont proscrits pour l'execice; Je contacte l'un de mes formateurs afin qu'il m'ouvre une base de données MySQL ainsi qu'un compte FTP, protège mon espace dédié avec un .htaccess et . htpasswd ... <b><i>BlogFisherMan</i></b> voit le jour ... (il n'y a pas de contenu sauf pour la Dorade Royale mais les fonctionnalités spécifiées dans le cahier des charges ont été respectées).
                 <br>
                 <a class="w3-black w3-hover-deep-orange" href="https://github.com/simplon-edouardg/blog_fisherman" target="_blank"><i class="fa fa-github"></i> Dépôt Github</a> ou directement sur le blog :
                 <br>
@@ -118,8 +143,8 @@
                 <p class="w3-left-align">2010 - 2011 : Webmaster / Intégrateur Auto Entrepreneur</p>
                 <p class="w3-left-align">09/2009 - 10/2009 : Webmaster Joomla</p>
                 <p class="w3-left-align">2005 : Webmaster Agence PATCHWORK Porto Vecchio - Corse</p>
-                <p class="w3-left-align">2000 - 2004 : Webmaster Freelance PUB@NNONCE - Créateur et concepteur de site web en tant que Micro Entreprise.</p>
-                <p class="w3-left-align">1990 - 2000 : Chauffeur Poids Lourds - Magasinier différentes entreprises et Intérim, puis reconversion professionnelle.</p>
+                <p class="w3-left-align">2000 - 2004 : Webmaster Freelance PUB@NNONCE - Créateur et concepteur de sites web en tant que Micro Entreprise.</p>
+                <p class="w3-left-align">1990 - 2000 : Magasinier et chauffeur poid lourds - différentes entreprises et intérim, puis reconversion professionnelle.</p>
             </div>
 
             <div id="Stages" class="w3-container histoire" style="display:none">
@@ -190,19 +215,17 @@
             }
         }
 
-        // Menu Petits écrans Smartphones et Tablettes Responsive ...
+        // Menu Petits écrans smartphones et Tablettes Responsive ...
         function toggleFunction() {
             var x = document.getElementById("navMobile");
             if (x.className.indexOf("w3-show") == -1) {
-                x.className += "w3-show";
+                x.className += " w3-show";
             } else {
                 x.className = x.className.replace(" w3-show", "");
             }
         }
 
-    </script>
 
-    <script>
         $(document).ready(function() {
             $('.js-scrollTo').on('click', function() { // Au clic sur un élément
                 var page = $(this).attr('href'); // Page cible
@@ -214,9 +237,8 @@
             });
         });
 
-    </script>
 
-    <script>
+
         // Script Tabs à Propos
         function openHistoire(histoireName) {
             var i;
@@ -230,24 +252,25 @@
     </script>
 
 
-    <script>
-        // Google Analytics
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <!--
+<script>
+    // Google Analytics
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-102199116-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
+    ga('create', 'UA-102199116-1', 'auto');
+    ga('send', 'pageview');
+</script>
+-->
 </body>
 
 </html>
