@@ -32,13 +32,13 @@
     <div class="w3-top">
         <ul class="w3-navbar w3-black w3-large" id="myNavbar">
             <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-                <a class="js-scrollTo w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Menu">
+                <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Menu">
                     <i class="fa fa-bars">
                     </i>
                 </a>
             </li>
             <li class="w3-hide-small w3-hover-dark-grey w3-padding-12">
-                <a class="js-scrollTo w3-hover-dark-grey" href="#top" title="Accueil">
+                <a class="js-scrollTo w3-hover-dark-grey" href="#home" title="Accueil">
                     <i class="fa fa-home"></i> ACCUEIL</a>
             </li>
             <li class="w3-hide-small w3-hover-deep-orange w3-padding-12">
@@ -60,12 +60,12 @@
         <div id="navMobile" class="w3-hide w3-hide-large w3-hide-medium">
             <ul class="w3-navbar w3-left-align w3-black">
                 <li class="w3-hover-dark-grey">
-                    <a class="js-scrollTo js-scrollTo js-scrollTo js-scrollTo w3-hover-dark-grey" href="#top" onclick="toggleFunction()" title="Accueil"> ACCUEIL</a></li>
+                    <a class="js-scrollTo w3-hover-dark-grey" href="#home" onclick="toggleFunction()" title="Accueil"> ACCUEIL</a></li>
                 <li class="w3-hover-deep-orange">
-                    <a class="js-scrollTo js-scrollTo js-scrollTo w3-hover-deep-orange" href="#about" onclick="toggleFunction()" title="A propos"> A PROPOS</a>
+                    <a class="js-scrollTo w3-hover-deep-orange" href="#about" onclick="toggleFunction()" title="A propos"> A PROPOS</a>
                 </li>
                 <li class="w3-hover-lime">
-                    <a class="js-scrollTo js-scrollTo w3-hover-lime" href="#competences" onclick="toggleFunction()" title="Savoir-faire et compétences"> SAVOIR-FAIRE</a>
+                    <a class="js-scrollTo w3-hover-lime" href="#competences" onclick="toggleFunction()" title="Savoir-faire et compétences"> SAVOIR-FAIRE</a>
                 </li>
                 <li class="w3-hover-deep-purple">
                     <a class="js-scrollTo w3-hover-deep-purple" href="#contact" onclick="toggleFunction()" title="Me contacter"> CONTACT</a>
@@ -77,7 +77,7 @@
     <!-- Parallax 1 avec narbonne_parallax.jpg -->
     <div class="bgimg-1 w3-display-container" id="home">
         <h1>
-            <div class="w3-display-topmiddle w3-center">
+            <div class="w3-display-topleft w3-center">
                 <br>
                 <span class="w3-dark-grey">Edouard Gravez</span>
             </div>
@@ -86,7 +86,7 @@
             <div class="w3-display-middle w3-center">
                 <span class="w3-deep-purple">Webmaster Intégrateur</span>
             </div>
-            <div class="w3-display-bottommiddle w3-center">
+            <div class="w3-display-bottomright w3-center">
                 <span class="w3-lime">à Narbonne - Occitanie</span>
                 <br>
             </div>
@@ -172,7 +172,8 @@
     <div class="w3-display-container">
         <div class="w3-panel w3-border w3-border-lime w3-light-black w3-round-large">
 
-            <p></p>
+            <p>Depuis avril 2015 Google pénalise les sites web non "<b>R</b>esponsive <b>W</b>eb <b>D</b>esign"</p>, c'est à dire un contenus proportionnels et adaptables à toute taille d'écran, que ce soit un smartphone ou une tablette. Le nouvelles norment du "<b>S</b>earch <b>E</b>ngine <b>O</b>ptimization (Optimisation dans les moteurs de recherches) sont aussi imposées par Google; Aussi certaines balises META ne sont plus d'actualité, voir supprimées.<br>
+            <b>Conclusion</b> : Vous pouvez avoir un très beau site avec du très beau contenu mais si votre conccurence respecte ces deux critères mais le vôtre site (que ce soit un site vitrine, catalogue ou E commerce), il sera pénalisé quant au positionnement sur les moteurs de recherches.<br> Pour vérifier si vôtre site est aux normes <b>RWD</b> il vous suffit de tapper sur la touche <b>F12</b> de vôtre clavier (en mode développeur) et de cliquer sur le petit icone en forme de mobile en bas à droite. Si le contenu est décallé voir disparatre, vôtre site n'est pas Responsive.<br> Google propose aussi un outil en ligne afin de vérifier la conformité à ces nouvelles normes. Sasissez l'url vôtre site et opservez le résultat : <a class="w3-black w3-hover-lime" href="https://www.google.com/webmasters/tools/mobile-friendly/" target="_blank" title="Test d'optimisation mobile et tablette - Google Fiendly">Test d'optimisation mobile et tablette - Google Fiendly</a>
 
         </div>
 
@@ -252,25 +253,26 @@
     </script>
 
 
-    <!--
-<script>
-    // Google Analytics
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-102199116-1', 'auto');
-    ga('send', 'pageview');
-</script>
--->
+    <script>
+        // Google Analytics
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-102199116-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
 </body>
 
 </html>
